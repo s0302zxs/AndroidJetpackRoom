@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">RoomTest</string>
+
+
+    <string name="days_ago">day(s) ago</string>
+    <string name="weeks_ago">week(s) ago</string>
+    <string name="months_ago">month(s) ago</string>
+    <string name="years_ago">year(s) ago</string>
+
+    <string name="recent">recent</string>
+    <string name="popular">popular</string>
+    <integer name="slide_anim_duration">500</integer>
+
+
+    <!-- ChooseMember -->
+    <string name="employee">Employee</string>
+    <string name="visitor">Visitor</string>
+
+
+    <!-- ChooseMode -->
+    <string name="id_card">ID card</string>
+    <string name="security_code">Security Code</string>
+    <string name="qr_code">QR Code</string>
+    <string name="facial_recognition">Facial Recognition</string>
+    <string name="fingerprint_recognition">Fingerprint Recognition</string>
+
+    <!-- SecurityCode -->
+    <string name="security_hint">Enter 4 digit security code</string>
+
+
+
+
+    <!-- FooterBar -->
+    <string name="back">Back</string>
+    <string name="registration">Registration</string>
+
+
+    <string name="save_data">Save Data</string>
+    <string name="get_data">Get Data</string>
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+                name="viewModel"
+                type="com.giles.room.ui.chooseMember.ChooseMemberViewModel"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_bg">
+
+        <ImageView
+                android:id="@+id/imgEmployee"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_employee"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imgVisitor"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/txtEmployee"
+
+        />
+
+        <TextView
+                android:id="@+id/txtEmployee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/employee"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                app:layout_constraintTop_toBottomOf="@+id/imgEmployee"
+                app:layout_constraintStart_toStartOf="@+id/imgEmployee"
+                app:layout_constraintEnd_toEndOf="@+id/imgEmployee"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+
+        />
+
+        <ImageView
+                android:id="@+id/imgVisitor"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_visitor"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@+id/imgEmployee"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/txtVisitor"
+
+        />
+
+        <TextView
+                android:id="@+id/txtVisitor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/visitor"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                app:layout_constraintTop_toBottomOf="@+id/imgVisitor"
+                app:layout_constraintStart_toStartOf="@+id/imgVisitor"
+                app:layout_constraintEnd_toEndOf="@+id/imgVisitor"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>
